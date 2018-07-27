@@ -1,3 +1,6 @@
+/***************************** COLORS *****************************/
+/***************************** FONTS *****************************/
+/***************************** COMMON CLASSES *****************************/
 .common-title {
   display: inline-block;
   font-size: 3rem;
@@ -8,7 +11,7 @@
 }
 
 .common-title::first-letter {
-  font-family: 'Great Vibes', cursive;
+  font-family: "Great Vibes", cursive;
   font-size: 5rem;
   margin-right: 10px;
   font-style: normal;
@@ -20,6 +23,8 @@
   text-shadow: 2px 5px 20px #aaa;
 }
 
+/***************************** NAVIGATION *****************************/
+/***************************** HEADER *****************************/
 header {
   height: 100vh;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.8))), url(/assets/img/header-bg.jpeg) fixed center no-repeat/cover;
@@ -84,4 +89,11 @@ header .banner-heading img {
             transform: scale(1);
   }
 }
+
+/***************************** GALLERY *****************************/
+/***************************** FAMOUS WRITERS *****************************/
+/***************************** SUGGESTED BOOKS *****************************/
+/***************************** POPULAR BOOKS *****************************/
+/***************************** FOOTER *****************************/
+/***************************** MEDIA QUERIES *****************************/
 /*# sourceMappingURL=style.css.map */

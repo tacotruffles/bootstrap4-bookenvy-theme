@@ -1,16 +1,20 @@
+/***************************** COLORS *****************************/
+$dark-grey: #aaa;
 
-// font-family: 'Great Vibes', cursive;
+/***************************** FONTS *****************************/
+// USING CDNS
+$great-vibes: 'Great Vibes', cursive;
 
-// Common
+/***************************** COMMON CLASSES *****************************/
 .common-title {
    display: inline-block; // adjust so that hover effect is on text not the entire display block
    font-size: 3rem;
    font-weight: 500;
-   text-shadow: 2px 2px 5px #aaa;
+   text-shadow: 2px 2px 5px $dark-grey;
    transition: all .5s;
 
    &::first-letter {
-      font-family: 'Great Vibes', cursive;
+      font-family: $great-vibes;
       font-size: 5rem;
       margin-right: 10px;
       font-style: normal;
@@ -18,12 +22,13 @@
 
    &:hover {
       transform: translate(-5px, -3px);
-      text-shadow: 2px 5px 20px #aaa;
+      text-shadow: 2px 5px 20px $dark-grey;
    }
 }
-// end Common
 
-// Header
+/***************************** NAVIGATION *****************************/
+
+/***************************** HEADER *****************************/
 header {
    height: 100vh;
    background: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.8)) ,url(/assets/img/header-bg.jpeg) fixed center no-repeat / cover;
@@ -60,4 +65,12 @@ header {
       }
    }
 }
-// End Header
+
+
+/***************************** GALLERY *****************************/
+/***************************** FAMOUS WRITERS *****************************/
+/***************************** SUGGESTED BOOKS *****************************/
+/***************************** POPULAR BOOKS *****************************/
+/***************************** FOOTER *****************************/
+
+/***************************** MEDIA QUERIES *****************************/
