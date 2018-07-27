@@ -1,6 +1,10 @@
 /***************************** COLORS *****************************/
 /***************************** FONTS *****************************/
 /***************************** COMMON CLASSES *****************************/
+body {
+  overflow-x: hidden;
+}
+
 .common-title {
   display: inline-block;
   font-size: 3rem;
@@ -91,6 +95,40 @@ header .banner-heading img {
 }
 
 /***************************** GALLERY *****************************/
+#gallery .gallery-img {
+  -webkit-transition: all .5s;
+  transition: all .5s;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+
+#gallery .gallery-img:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+#gallery .first-row {
+  -webkit-transform: translateX(-300px);
+          transform: translateX(-300px);
+  opacity: .5;
+  -webkit-transition: all 2.5s;
+  transition: all 2.5s;
+}
+
+#gallery .second-row {
+  -webkit-transform: translateX(300px);
+          transform: translateX(300px);
+  opacity: .5;
+  -webkit-transition: all 2.5s;
+  transition: all 2.5s;
+}
+
+#gallery .change.first-row, #gallery .change.second-row {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+  opacity: 1;
+}
+
 /***************************** FAMOUS WRITERS *****************************/
 /***************************** SUGGESTED BOOKS *****************************/
 /***************************** POPULAR BOOKS *****************************/

@@ -6,6 +6,9 @@ $dark-grey: #aaa;
 $great-vibes: 'Great Vibes', cursive;
 
 /***************************** COMMON CLASSES *****************************/
+body {
+   overflow-x: hidden; // for horizontal slide in animations
+}
 .common-title {
    display: inline-block; // adjust so that hover effect is on text not the entire display block
    font-size: 3rem;
@@ -66,8 +69,38 @@ header {
    }
 }
 
-
 /***************************** GALLERY *****************************/
+#gallery {
+
+   .gallery-img {
+      transition: all .5s;
+      backface-visibility: hidden;
+
+      &:hover {
+         transform: scale(1.05);
+      }
+   }
+
+   // Gallery animation - start with offscreen and hidden
+   .first-row {
+      transform: translateX(-300px);
+      opacity: .5;
+      transition: all 2.5s;
+      
+   }
+
+   .second-row {
+      transform: translateX(300px);
+      opacity: .5;
+      transition: all 2.5s;
+   }
+
+   // jQuery adds the .change class to the gallery row when the veritcal scroll puts them into view
+   .change.first-row, .change.second-row {
+      transform: translateX(0);
+      opacity: 1;
+   }
+}
 /***************************** FAMOUS WRITERS *****************************/
 /***************************** SUGGESTED BOOKS *****************************/
 /***************************** POPULAR BOOKS *****************************/
