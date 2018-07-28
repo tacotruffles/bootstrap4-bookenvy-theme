@@ -29,6 +29,68 @@ body {
 }
 
 /***************************** NAVIGATION *****************************/
+nav .hamburger-menu {
+  top: 30px;
+  right: 30px;
+  width: 65px;
+  height: 65px;
+  background: #7f7b82;
+  border-radius: 50%;
+  outline: none !important;
+  position: fixed;
+  z-index: 200;
+  -webkit-transition: all .7s;
+  transition: all .7s;
+}
+
+nav .hamburger-menu .line1, nav .hamburger-menu .line2, nav .hamburger-menu .line3 {
+  width: 30px;
+  height: 2px;
+  background: #eee;
+  margin: 5px;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+nav.change .hamburger-menu {
+  background: #eef0eb;
+}
+
+nav.change .line1 {
+  background: #777;
+  -webkit-transform: rotate(-405deg) translate(-5px, 5px);
+          transform: rotate(-405deg) translate(-5px, 5px);
+}
+
+nav.change .line2 {
+  background: #777;
+  opacity: 0;
+}
+
+nav.change .line3 {
+  background: #777;
+  -webkit-transform: rotate(405deg) translate(-5px, -5px);
+          transform: rotate(405deg) translate(-5px, -5px);
+}
+
+nav.change .bg-menu {
+  -webkit-transform: scale(150);
+          transform: scale(150);
+}
+
+nav .bg-menu {
+  background: rgba(35, 37, 40, 0.98);
+  top: 35px;
+  right: 35px;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  position: fixed;
+  z-index: 100;
+  -webkit-transition: all linear .5s;
+  transition: all linear .5s;
+}
+
 /***************************** HEADER *****************************/
 header {
   height: 100vh;

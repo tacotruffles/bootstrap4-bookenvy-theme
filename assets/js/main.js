@@ -1,10 +1,16 @@
 $(document).ready(function() {
-  //Lightbox Options
+  // Trigger Menu Overlay and .navbar-toggler animation
+  $("nav").click(function() {
+    $("nav").toggleClass("change");
+  });
+
+  // Lightbox Options
   lightbox.option({
     resizeDuration: 200,
     wrapAround: true
   });
 
+  // Trigger Gallery animation scrolled in/out 350px
   $(window).scroll(function() {
     let position = $(this).scrollTop();
 
