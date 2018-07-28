@@ -212,8 +212,66 @@ header .banner-heading img {
 }
 
 #popular-books .video-container .bg-video {
+  height: 100%;
+  width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+#popular-books .book-card {
+  position: relative;
+  -webkit-box-shadow: 5px 15px 50px #aaa;
+          box-shadow: 5px 15px 50px #aaa;
+  max-width: 420px;
+  -webkit-transition: all .8s;
+  transition: all .8s;
+  overflow: hidden;
+}
+
+#popular-books .book-card .back {
+  position: absolute;
+  top: -100%;
+  background: #fefefe;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  pointer-events: none;
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  -webkit-transition: top .8s, opacity .4s;
+  transition: top .8s, opacity .4s;
+}
+
+#popular-books .book-card .back .back-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+#popular-books .rotate:hover .book-card {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+#popular-books .rotate:hover .back {
+  top: 0;
+  -webkit-user-select: auto;
+     -moz-user-select: auto;
+      -ms-user-select: auto;
+          user-select: auto;
+  pointer-events: auto;
+  opacity: 1;
+}
+
+#popular-books .rotate {
+  -webkit-perspective: 100rem;
+          perspective: 100rem;
 }
 
 /***************************** FOOTER *****************************/

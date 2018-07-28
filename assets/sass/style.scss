@@ -172,8 +172,53 @@ header {
       opacity: .4;
 
       .bg-video {
+         height: 100%;
+         width: 100%;
          object-fit: cover;
       }
+   }
+
+   .book-card {
+      position: relative;
+      box-shadow: 5px 15px 50px $dark-grey;
+      max-width: 420px;
+      transition: all .8s;
+      overflow: hidden;
+
+      .back {
+         position: absolute;
+         top: -100%;
+         background: #fefefe;
+         height: 100%;
+         width: 100%;
+         opacity: 0;
+         user-select: none;
+         pointer-events: none;
+         transform: rotateY(180deg);
+         transition: top .8s, opacity .4s;
+
+         .back-content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+         }
+      }
+   }
+
+   .rotate:hover .book-card {
+      transform: rotateY(180deg)
+   }
+
+   .rotate:hover .back {
+      top:0;
+      user-select: auto;
+      pointer-events: auto;
+      opacity: 1;
+   }
+
+   .rotate { // Beter 3D-effect
+      perspective: 100rem;
    }
 }
 /***************************** FOOTER *****************************/
