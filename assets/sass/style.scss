@@ -96,6 +96,23 @@ nav {
       position: fixed; // This pops it to the top left corner no matter what
       width: 100%;
       z-index: 150;
+
+      .navbar-nav {
+         .link-item {
+            font-size: 20px;
+            color: #ddd;
+            border-bottom: 1px solid #ddd;
+
+            &:hover {
+               color: white;
+               border-bottom: 1px solid white;
+               // Tab effect
+               border-radius: 50% 50% 0 0; 
+               background: rgba(0,0,0,.3);
+            }
+         }
+      }
+      
    }
 }
 
