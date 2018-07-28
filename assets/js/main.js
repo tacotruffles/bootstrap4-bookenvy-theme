@@ -16,4 +16,14 @@ $(document).ready(function() {
       $(".second-row").removeClass("change");
     }
   });
+
+  // Writers Accordion Interactivity
+  $(".writers-accordion").click(function(e) {
+    // a button was clicked
+    if (e.target.id.split("-")[0] == "button") {
+      // Set book img src attribute to show appropriate author's books
+      $("#book-1").attr("src", "/assets/img/writers/" + e.target.id.split("-")[1] + "-book1.jpg");
+      $("#book-2").attr("src", "/assets/img/writers/" + e.target.id.split("-")[1] + "-book2.jpg");
+    }
+  });
 });
