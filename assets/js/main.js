@@ -1,6 +1,6 @@
 $(document).ready(function() {
   // Trigger Menu Overlay and .navbar-toggler animation
-  $("nav").click(function() {
+  $(".navbar-toggler").click(function() {
     $("nav").toggleClass("change");
   });
 

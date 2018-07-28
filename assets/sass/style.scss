@@ -91,6 +91,12 @@ nav {
       z-index: 100;
       transition: all linear .5s;
    }
+
+   #navbarCollapse {
+      position: fixed; // This pops it to the top left corner no matter what
+      width: 100%;
+      z-index: 150;
+   }
 }
 
 /***************************** HEADER *****************************/

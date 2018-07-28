@@ -91,6 +91,12 @@ nav .bg-menu {
   transition: all linear .5s;
 }
 
+nav #navbarCollapse {
+  position: fixed;
+  width: 100%;
+  z-index: 150;
+}
+
 /***************************** HEADER *****************************/
 header {
   height: 100vh;
