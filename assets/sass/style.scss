@@ -266,6 +266,22 @@ header {
    .fifth-item {
       animation: floatItem 25s ease-in-out infinite;
    }
+
+   .contact-form {
+      input[type="text"],input[type="email"],textarea {
+         background: transparent;
+         font-size: 18px;
+         color: #333;
+         border-radius: 5px;
+         box-shadow: none;
+
+         &:focus {
+            background: rgba(250,250,250,.8);
+            box-shadow: none;
+         }
+      }
+   }
+
 }
 /***************************** FOOTER *****************************/
 

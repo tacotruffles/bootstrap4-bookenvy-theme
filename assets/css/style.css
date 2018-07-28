@@ -347,6 +347,21 @@ header .banner-heading img {
           animation: floatItem 25s ease-in-out infinite;
 }
 
+#contact .contact-form input[type="text"], #contact .contact-form input[type="email"], #contact .contact-form textarea {
+  background: transparent;
+  font-size: 18px;
+  color: #333;
+  border-radius: 5px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+#contact .contact-form input[type="text"]:focus, #contact .contact-form input[type="email"]:focus, #contact .contact-form textarea:focus {
+  background: rgba(250, 250, 250, 0.8);
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
 /***************************** FOOTER *****************************/
 /***************************** MEDIA QUERIES *****************************/
 /*# sourceMappingURL=style.css.map */
