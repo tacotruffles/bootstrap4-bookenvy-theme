@@ -197,6 +197,25 @@ header .banner-heading img {
 }
 
 /***************************** POPULAR BOOKS *****************************/
+#popular-books {
+  position: relative;
+}
+
+#popular-books .video-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: .4;
+}
+
+#popular-books .video-container .bg-video {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 /***************************** FOOTER *****************************/
 /***************************** MEDIA QUERIES *****************************/
 /*# sourceMappingURL=style.css.map */
