@@ -275,6 +275,78 @@ header .banner-heading img {
 }
 
 /***************************** CONTACT *****************************/
+#contact {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0.9))), url(/assets/img/header-bg.jpeg) fixed center no-repeat/cover;
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.9)), url(/assets/img/header-bg.jpeg) fixed center no-repeat/cover;
+}
+
+#contact .items-wrapper {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.6))), url(/assets/img/items-wrapper-bg.jpg) center no-repeat/cover;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)), url(/assets/img/items-wrapper-bg.jpg) center no-repeat/cover;
+  border-radius: 5px;
+}
+
+#contact .floating-item {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.65)));
+  background: linear-gradient(rgba(0, 0, 0, 0.65));
+  border-radius: 5px;
+}
+
+@-webkit-keyframes floatItem {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  50% {
+    -webkit-transform: translateX(-60px);
+            transform: translateX(-60px);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@keyframes floatItem {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  50% {
+    -webkit-transform: translateX(-60px);
+            transform: translateX(-60px);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+#contact .first-item {
+  -webkit-animation: floatItem 15s infinite;
+          animation: floatItem 15s infinite;
+}
+
+#contact .second-item {
+  -webkit-animation: floatItem 30s ease-in infinite;
+          animation: floatItem 30s ease-in infinite;
+}
+
+#contact .third-item {
+  -webkit-animation: floatItem 40s linear infinite;
+          animation: floatItem 40s linear infinite;
+}
+
+#contact .fourth-item {
+  -webkit-animation: floatItem 30s infinite;
+          animation: floatItem 30s infinite;
+}
+
+#contact .fifth-item {
+  -webkit-animation: floatItem 25s ease-in-out infinite;
+          animation: floatItem 25s ease-in-out infinite;
+}
+
 /***************************** FOOTER *****************************/
 /***************************** MEDIA QUERIES *****************************/
 /*# sourceMappingURL=style.css.map */
